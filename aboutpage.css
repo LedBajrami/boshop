@@ -1,0 +1,197 @@
+#page-header {
+    background-image: url("img/banner/b23.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 14px;
+}
+
+.blog-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#blog .blog-img {
+    width: 50%;
+    margin-right: 50px;
+}
+
+#blog .blog-img img {
+    width: 100%;
+}
+
+#blog .blog-details {
+   width: 50%;
+}
+
+#blog .blog-box h1 {
+    position: initial;
+    font-size: 50px;
+    font-weight: 700;
+    color: #333;
+}
+
+#blog .blog-details p {
+    font-size: 17px;
+}
+
+marquee {
+    margin-top: 30px;
+}
+
+#about-app {
+    text-align: center;
+}
+
+#about-app .video {
+    width: 70%;
+    height: 100%;
+    margin-top: 30px;
+    margin-inline: auto;
+}
+
+#about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+
+/*---------------------- collapsible table ------------------------*/
+
+.main-collapsible {
+  background-color: white;
+  color: black;
+  width: 90%;
+  margin-inline: auto;
+  margin-block: 120px 40px;
+}
+
+
+.container-collapsible {
+  width: 95%;
+  margin: 0 auto;
+}
+
+
+hr {
+  background-color: white;
+  width: 90%;
+  display: block;
+  margin-inline: auto;
+}
+
+
+
+.collapsible-button {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 5px;
+  width: 85%;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-bottom: 5px;
+  border: none;
+}
+
+
+
+
+
+.button-name-collapsible {
+  color: black;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+}
+
+.button-name-collapsible:hover {
+  color: #088178;
+}
+
+
+
+.collapsible-button:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  font-size: 24px;
+}
+
+.collapsible-button:hover::after{
+  color: #088178;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  color: black;
+  width: 90%;
+  margin-left: -2%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*---------------------- collapsible table ------------------------*/
+
+
+@media(max-width: 477px) {
+    .blog-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+   #blog .blog-img,
+   #blog .blog-details {
+        width: 100%;
+        text-align: center;
+    }
+
+    #blog .blog-details h1 {
+        font-size: 45px;
+    }
+
+    #about-app .video {
+        width: 100%;
+    }
+
+    .main-collapsible {
+      display: block;
+      width: 95%;
+      margin-inline: auto;
+    }
+
+    .row {
+      display: block;
+      justify-content: center;
+      align-items: center;
+    }
+}

@@ -1,0 +1,126 @@
+
+
+#page-header {
+    background-image: url("img/banner/b24.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 14px;
+}
+
+.container {
+    width: 65%;
+    margin: 70px auto;
+    text-align: center;
+    border: 1px solid rgb(197, 194, 194);
+    box-shadow: 1px 1px 10px rgb(114, 113, 113);
+    padding: 40px 10px;
+}
+
+.row, .row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    padding: 20px 10px;
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+}
+
+.buttons,
+.forgot-pw,
+.remember-me {
+    width: 60%;
+    margin: 20px auto;
+}
+
+button{
+    width: 60%;
+}
+
+a {
+    text-decoration: underline;
+    color: gray;
+    cursor: pointer;
+}
+
+
+.buttons a{
+    width: 100%;
+}
+
+.buttons a button {
+    width: 90%;
+}
+
+
+.remember-me div p {
+    white-space: nowrap;
+    margin-bottom: 40px;
+    margin-left: 7px;
+}
+  
+  
+  
+  .modal {
+    max-width: 70ch;
+    padding: 40px 20px;
+    margin-inline: auto;
+    position: fixed;
+    top: 8%;
+    z-index: 32;
+    border: 0;
+    text-align: center;
+  }
+
+
+  dialog::backdrop {
+    background: rgba(255, 0, 0, 0.25);
+  }
+  
+  
+
+  
+  
+  .modal * {
+    margin-block: 13px;
+  }
+  
+  
+  
+  
+  .modal input {
+    border: 1.3px solid black;
+    border-radius: 3px;
+  }
+
+  @media (max-width: 500px) {
+    .row {
+        flex-direction: column;
+    }
+
+    button {
+        margin-block: 7px;
+    }
+
+    .forgot-pw p {
+        display: none;
+    }
+  }
+  
+
+  
+  
+  
+  
